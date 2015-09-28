@@ -2,7 +2,7 @@
     "test-class": "Group analyses",
     "name": "Different TRs",
     "description":"Tests that files with different TRs are rejected.",
-    "expected-task-status":"Failed",
+    "expected-task-status":"Completed with warning",
     "input-file-names": {
         "csv-file-name":"nii_test_TR_diff.csv",
         "design-file-name":"GICA_custom_template.fsf"
