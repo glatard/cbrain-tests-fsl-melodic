@@ -1,0 +1,16 @@
+{
+    "test-class": "Individual analyses", 
+    "name": "Different TRs",
+    "description": "Tests that input files with different TRs can be processed.",
+    "expected-task-status":"Completed",
+    "input-file-names": {
+        "csv-file-name":"nii_test_TR_diff.csv",
+        "design-file-name":"design_file_5delete.fsf"
+    },
+    "parameters": {
+        "tr_auto":"0",
+        "npts_auto":"0",
+        "totalvoxels_auto":"0"
+    }
+}
+

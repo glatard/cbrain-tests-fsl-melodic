@@ -1,0 +1,15 @@
+{
+    "test-class": "Group analyses",
+    "name": "Different TRs",
+    "description":"Tests that files with different TRs are rejected.",
+    "expected-task-status":"Failed",
+    "input-file-names": {
+        "csv-file-name":"nii_test_TR_diff.csv",
+        "design-file-name":"GICA_custom_template.fsf"
+    },
+    "parameters": {
+        "tr_auto":"0",
+        "npts_auto":"0",
+        "totalvoxels_auto":"0"
+    }
+}

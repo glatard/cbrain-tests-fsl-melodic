@@ -1,0 +1,16 @@
+{
+    "test-class": "Individual analyses", 
+    "name": "With auto-correction",
+    "description": "Tests that auto-corrections of TR, number of volumes and total voxels are functional.",
+    "expected-task-status":"Completed",
+    "input-file-names": {
+        "csv-file-name":"nii_test.csv",
+        "design-file-name":"design_file_5delete.fsf"
+            },
+    "parameters": {
+        "tr_auto":"1",
+                "npts_auto":"1",
+        "totalvoxels_auto":"1"
+    }
+}
+ 

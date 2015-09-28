@@ -1,0 +1,15 @@
+{
+    "test-class": "Individual analyses", 
+    "name": "Nifti",
+    "description": "Tests that Nifti files can be processed.",
+    "expected-task-status":"Completed",
+    "input-file-names": {
+        "csv-file-name":"nii_test.csv",
+        "design-file-name":"design_file_5delete.fsf"
+    },
+    "parameters": {
+        "tr_auto":"0",
+        "npts_auto":"0",
+        "totalvoxels_auto":"0"
+    }
+}

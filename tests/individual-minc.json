@@ -1,0 +1,17 @@
+{
+       
+    "test-class": "Individual analyses", 
+    "name": "Minc",
+    "description": "Tests that Minc files can be processed.",
+    "expected-task-status":"Completed",
+    "input-file-names": {
+        "csv-file-name":"minc_test.csv",
+        "design-file-name":"design_file_5delete.fsf"
+    },
+    "parameters": {
+        "tr_auto":"0",
+        "npts_auto":"0",
+        "totalvoxels_auto":"0"
+    }
+}
+ 

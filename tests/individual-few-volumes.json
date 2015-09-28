@@ -1,0 +1,15 @@
+{
+    "test-class": "Individual analyses", 
+    "name": "Few volumes",
+    "description": "Tests that input files with too few volumes are rejected.",
+    "expected-task-status":"Failed",
+    "input-file-names": {
+        "csv-file-name":"nii_test_20vols.csv",
+        "design-file-name":"design_file_5delete.fsf"
+    },
+            "parameters": {
+                "tr_auto":"0",
+                "npts_auto":"0",
+                "totalvoxels_auto":"0"
+            }
+}
