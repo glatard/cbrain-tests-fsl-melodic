@@ -227,7 +227,6 @@ if !template_file_name.blank?
 end
 
 # Task submission
-puts ">> Submitting task FslMelodic"
 task_description = "Test class: \"#{test["test-class"]}\"\n Test: \"#{test["name"]}\"\nExpected status: \"#{test["expected-task-status"]}\""
 task_ids = agent.create_task( input_files,
                               fsl_melodic_tool_config_id,
@@ -241,5 +240,5 @@ if task_ids.nil?
 end
 
 task_ids.each do |id|
-    puts "Submitted task #{id}"
+    puts "ii Submitted task #{id}"
 end

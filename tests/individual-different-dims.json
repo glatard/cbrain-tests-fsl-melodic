@@ -1,5 +1,5 @@
 {
-    "test=class": "Individual analyses", 
+    "test-class": "Individual analyses", 
     "name": "Different dimensions",
     "description": "Tests that input files with different dimensions can be processed.",
     "expected-task-status":"Completed",

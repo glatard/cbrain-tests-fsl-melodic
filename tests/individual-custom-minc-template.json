@@ -3,11 +3,11 @@
     "name": "With custom Minc template",
     "description": "Tests that a custom Minc template can be used.",
     "expected-task-status":"Completed",
-            "input-file-names": {
-                "csv-file-name":"nii_test.csv",
-                "design-file-name":"design_file_5delete_custom_template.fsf",
-                "template-file-name":"icbm152_t1_sym.mnc"
-            },
+    "input-file-names": {
+        "csv-file-name":"nii_test.csv",
+        "design-file-name":"design_file_5delete_custom_template.fsf",
+        "template-file-name":"icbm152_t1_sym.mnc"
+    },
     "parameters": {
         "tr_auto":"0",
         "npts_auto":"0",
