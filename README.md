@@ -10,6 +10,34 @@
 
 `ruby -I<path-to-cbrain-ruby-api> ./run_test.rb <path-to-test-file> <path-to-data-dir> --overwrite-all`
 
+# Available tests
+
+## Individual analyses
+
+Should complete: 
+* Nifti files
+* Minc files
+* Nifti files with auto-correction of TR, number of volumes, number of voxels
+* Nifti files with custom Nifti standard brain
+* Nifti files with custom Minc standard brain
+* Nifti files with different dimensions
+* Nifti files with different TRs
+
+Should fail with proper error message:
+* Nifti files with few volumes
+
+## Group analyses
+
+Should complete: 
+* Nifti files
+* Minc files
+
+Should fail with proper error message: 
+* Nifti files with different dimensions
+* Nifti files with different TRs
+* Nifti files with few volumes
+
+
 # Limitations
 
 The test script submits tasks to CBRAIN and puts the expected final status in the task description. It does not:
