@@ -2,7 +2,7 @@
     "test-class": "Group analyses",
     "name": "Different dimensions",
     "description":"Tests that files with different dimensions are rejected.",
-    "expected-task-status":"Failed",
+    "expected-task-status":"Failed On Cluster",
     "input-file-names": {
         "csv-file-name":"nii_test_dim_diff.csv",
         "design-file-name":"GICA_custom_template.fsf"

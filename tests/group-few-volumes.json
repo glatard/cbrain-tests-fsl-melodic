@@ -2,7 +2,7 @@
     "test-class": "Group analyses",
     "name": "Few volumes",
     "description":"Tests that files with too few volumes are rejected.",
-    "expected-task-status":"Failed",
+    "expected-task-status":"Failed On Cluster",
     "input-file-names": {
         "csv-file-name":"nii_test_20vols.csv",
         "design-file-name":"GICA_custom_template.fsf"
