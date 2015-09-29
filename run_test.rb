@@ -119,8 +119,9 @@ if !overwrite_mode.blank? && overwrite_mode!="--overwrite-all" && overwrite_mode
   raise "!! Unknown option: #{overwrite_mode}"
 end
 
-puts "ii Test file: \"#{test_file}\""
 test = JSON.parse File.read test_file
+puts "ii Class: \"#{test["test-class"]}\", Test: \"#{test["name"]}\", File: \"#{test_file}\""
+
 
 # CBRAIN configuration
 configuration_file=File.join(ENV['HOME'],".cbrain_api")
@@ -169,7 +170,6 @@ end
 end
 
 # Task parameters
-puts "ii Test name: \"#{test["name"]}\""
 task_params = Hash.new
 test["parameters"].each_with_object({}){|(k,v), h| task_params[k.to_sym] = v}
   
