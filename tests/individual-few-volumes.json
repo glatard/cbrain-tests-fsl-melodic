@@ -4,7 +4,7 @@
     "description": "Tests that input files with too few volumes are rejected.",
     "expected-task-status":"Failed",
     "input-file-names": {
-        "csv-file-name":"nii_test_20vols.csv",
+        "csv-file-name":"nii_test_20vols_individual.csv",
         "design-file-name":"design_file_5delete.fsf"
     },
             "parameters": {
