@@ -4,7 +4,7 @@
     "description": "Tests that a custom Nifti template can be used.",
     "expected-task-status":"Completed",
     "input-file-names": {
-        "csv-file-name":"nii_test.csv",
+        "csv-file-name":"nii_test_1_subj.csv",
         "design-file-name":"design_file_5delete_custom_template.fsf",
         "template-file-name":"icbm152_t1_sym.nii"
     },

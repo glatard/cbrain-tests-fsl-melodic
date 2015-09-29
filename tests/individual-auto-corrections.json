@@ -4,7 +4,7 @@
     "description": "Tests that auto-corrections of TR, number of volumes and total voxels are functional.",
     "expected-task-status":"Completed",
     "input-file-names": {
-        "csv-file-name":"nii_test.csv",
+        "csv-file-name":"nii_test_1_subj.csv",
         "design-file-name":"design_file_5delete.fsf"
             },
     "parameters": {

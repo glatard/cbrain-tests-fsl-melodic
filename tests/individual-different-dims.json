@@ -4,7 +4,7 @@
     "description": "Tests that input files with different dimensions can be processed.",
     "expected-task-status":"Completed",
     "input-file-names": {
-        "csv-file-name":"nii_test_dim_diff.csv",
+        "csv-file-name":"nii_test_dim_diff_2_subj.csv",
         "design-file-name":"design_file_5delete.fsf"
     },
     "parameters": {
