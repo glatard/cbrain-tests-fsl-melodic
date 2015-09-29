@@ -2,9 +2,9 @@
 
 * Install the [CBRAIN Ruby API](https://github.com/aces/cbrain-apis): `git clone https://github.com/aces/cbrain-apis.git`
 
-* Download the test data from [http://www.creatis.insa-lyon.fr/~glatard/test-melodic-cbrain/data.tgz](http://www.creatis.insa-lyon.fr/~glatard/test-melodic-cbrain/data.tgz)
+* Clone this repository: `git clone https://github.com/glatard/cbrain-tests-fsl-melodic.git`
 
-* Extract the test data: `tar zxvf data.tgz`
+* Move to directory `cbrain-tests-fsl-melodic` and get the test data with git annex: `git annex get data/*`
 
 * Tests are located in directory `tests`. To run them:
 
