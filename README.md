@@ -32,9 +32,11 @@ Should complete:
 * Nifti files
 * Minc files
 
+Should complete with warning:
+* Nifti files with different TRs
+
 Should fail with proper error message: 
 * Nifti files with different dimensions
-* Nifti files with different TRs
 * Nifti files with few volumes
 
 
