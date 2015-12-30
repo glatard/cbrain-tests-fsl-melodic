@@ -28,7 +28,7 @@ class CbrainRubyAPI
     absolute_file_name = File.join(data_dir,file_name)
     raise "!! File does not exist: #{absolute_file_name}" unless File.exist?(absolute_file_name)
     userfiles = index_userfiles({:data_provider_id => cbrain_data_provider_id, :name=>file_name})
-    raise "!! Found more than 1 file with name #{file_name} on data provider #{data_provider_id}" if userfiles.size > 1
+    raise "!! Found more than 1 file with name #{file_name} on data provider #{cbrain_data_provider_id}" if userfiles.size > 1
 
     if !userfiles.empty? # file exists
       return userfiles[0][:id] if @overwrite_none # file exists and no file must be overwritten: do nothing. 
