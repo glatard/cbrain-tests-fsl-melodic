@@ -11,6 +11,7 @@
     "parameters": {
         "tr_auto":"0",
         "npts_auto":"0",
-        "totalvoxels_auto":"0"
+        "totalvoxels_auto":"0",
+        "custom_regstandard":"1"
     }
 }
