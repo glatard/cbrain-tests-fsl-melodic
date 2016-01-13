@@ -27,9 +27,15 @@ class CbrainRubyAPI
 
     absolute_file_name = File.join(data_dir,file_name)
     raise "!! File does not exist: #{absolute_file_name}" unless File.exist?(absolute_file_name)
-    userfiles = index_userfiles({:data_provider_id => cbrain_data_provider_id, :name=>file_name})
-    raise "!! Found more than 1 file with name #{file_name} on data provider #{cbrain_data_provider_id}" if userfiles.size > 1
-
+    userfiles = index_userfiles({:data_provider_id => cbrain_data_provider_id, :name => file_name})
+    if userfiles.size > 1
+      puts "!! Found the following file ids with name #{file_name} on data provider #{cbrain_data_provider_id}:"
+      userfiles.each do |f|
+        puts "!! #{f[:id]}"
+      end
+      raise "!! Found more than 1 file with name #{file_name} on data provider #{cbrain_data_provider_id}" 
+    end
+    
     if !userfiles.empty? # file exists
       return userfiles[0][:id] if @overwrite_none # file exists and no file must be overwritten: do nothing. 
       overwrite = @overwrite_all ? true : ask_overwrite(userfiles[0][:name],userfiles[0][:id])
@@ -61,6 +67,10 @@ class CbrainRubyAPI
     begin
       sleep 1
       userfile_info = show_userfile(userfiles[0][:id])
+      if userfile_info.blank? or userfile_info[:remote_sync_status].blank? or userfile_info[:remote_sync_status].empty?
+        print "x"
+        next
+      end
       status = userfile_info[:remote_sync_status][0][:status]
       print "."
     end while status != "InSync"
