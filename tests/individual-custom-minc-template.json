@@ -11,7 +11,6 @@
     "parameters": {
         "tr_auto":"0",
         "npts_auto":"0",
-        "totalvoxels_auto":"0",
-        "alternatereference_yn":"1"
+        "totalvoxels_auto":"0"
     }
 }
