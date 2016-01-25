@@ -49,3 +49,4 @@ The test script submits tasks to CBRAIN and puts the expected final status in th
 * Check that the FSL melodic viewer works for results of "Completed" tasks.
 * Check that the results of "Completed" tasks are actually correct.
 * Check that the logs of "Failed" tasks contain proper error messages.
+* Check that tasks behave properly when restarted.
