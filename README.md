@@ -26,6 +26,9 @@ Should complete:
 Should fail with proper error message:
 * Nifti files with few volumes
 
+Should not even create a task:
+* Space in output name
+
 ## Group analyses
 
 Should complete: 
