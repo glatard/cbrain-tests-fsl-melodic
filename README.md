@@ -25,6 +25,7 @@ Should complete:
 
 Should fail with proper error message:
 * Nifti files with few volumes
+* Nifti files with different dimensions *and* exclusions of files that violate the dimension requirements (1 task will complete, 1 will fail)
 
 Should not even create a task:
 * Space in output name
@@ -37,9 +38,10 @@ Should complete:
 
 Should complete with warning:
 * Nifti files with different TRs
+* Nifi files with different dimensions *and* exclusions of files that violate the dimension requirements
 
 Should fail with proper error message: 
-* Nifti files with different dimensions
+* Nifti files with different dimensions *and* no exclusion of files that violate the dimension requirements
 * Nifti files with few volumes
 
 
