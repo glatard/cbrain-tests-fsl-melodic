@@ -1,0 +1,18 @@
+{
+    "test-class": "Individual analyses", 
+    "name": "Different dimensions, with exclusions",
+    "description": "Tests that input files with different dimensions can be processed.",
+    "expected-task-status":"Completed (1 task), Failed on Cluster (1 task)",
+    "input-file-names": {
+        "csv-file-name":"nii_test_dim_diff_2_subj.csv",
+        "design-file-name":"design_file_5delete.fsf"
+    },
+    "parameters": { 
+        "output_name":"test_indiv_diff_dims_exclusions",
+        "tr_auto":"0",
+        "npts_auto":"0",
+        "totalvoxels_auto":"0",
+        "check_t_dim":"1",
+        "required_z": "150"
+    }
+}
