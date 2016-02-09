@@ -8,6 +8,7 @@
         "design-file-name":"GICA_custom_template.fsf"
     },
     "parameters": {
+        "output_name":"test_group_diff_dims",
         "tr_auto":"0",
         "npts_auto":"0",
         "totalvoxels_auto":"0"

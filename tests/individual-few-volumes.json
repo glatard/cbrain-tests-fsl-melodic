@@ -8,6 +8,7 @@
         "design-file-name":"design_file_5delete.fsf"
     },
             "parameters": {
+                "output_name":"test_indiv_few_vols",
                 "tr_auto":"0",
                 "npts_auto":"0",
                 "totalvoxels_auto":"0"

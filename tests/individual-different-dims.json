@@ -7,7 +7,8 @@
         "csv-file-name":"nii_test_dim_diff_2_subj.csv",
         "design-file-name":"design_file_5delete.fsf"
     },
-    "parameters": {
+    "parameters": { 
+        "output_name":"test_indiv_diff_dims",
         "tr_auto":"0",
         "npts_auto":"0",
         "totalvoxels_auto":"0"

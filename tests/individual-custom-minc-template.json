@@ -9,6 +9,7 @@
         "template-file-name":"icbm152_t1_sym.mnc"
     },
     "parameters": {
+        "output_name":"test_indiv_custom_minc_template",
         "tr_auto":"0",
         "npts_auto":"0",
         "totalvoxels_auto":"0",
