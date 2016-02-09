@@ -1,3 +1,4 @@
+
 #!/usr/bin/env ruby
 
 require 'cbrain_ruby_api'
@@ -28,6 +29,8 @@ class CbrainRubyAPI
     absolute_file_name = File.join(data_dir,file_name)
     raise "!! File does not exist: #{absolute_file_name}" unless File.exist?(absolute_file_name)
     userfiles = index_userfiles({:data_provider_id => cbrain_data_provider_id, :name => file_name})
+    # Redo the call a second time, just in case (see API bug #5)
+    userfiles = index_userfiles({:data_provider_id => cbrain_data_provider_id, :name=>file_name})
     if userfiles.size > 1
       puts "!! Found the following file ids with name #{file_name} on data provider #{cbrain_data_provider_id}:"
       userfiles.each do |f|
@@ -60,6 +63,8 @@ class CbrainRubyAPI
     puts "#{response}" if !response.nil? && !response==""
 
     # Check that the file is in CBRAIN and wait for the synchronization status to be "InSync"
+    userfiles = index_userfiles({:data_provider_id => cbrain_data_provider_id, :name=>file_name})
+    # Redo the call a second time, just in case (see API bug #5)
     userfiles = index_userfiles({:data_provider_id => cbrain_data_provider_id, :name=>file_name})
     raise "!! Cannot find file with name #{file_name} on data provider #{cbrain_data_provider_id}" if userfiles.empty?
     raise "!! Found more than 1 file with name #{file_name} on data provider #{cbrain_data_provider_id}" if userfiles.size > 1
