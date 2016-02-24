@@ -1,6 +1,6 @@
 {
     "test-class": "Group analyses",
-    "name": "Different dimensions",
+    "name": "Different dimensions (with exclusion in z)",
     "description":"Tests file exclusion based on dimension checks.",
     "expected-task-status":"Completed",
     "input-file-names": {
